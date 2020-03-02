@@ -47,33 +47,33 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
-    <tags>bottom cli monitoring-tool top tui</tags>
+    <tags>cli cross-platform terminal top tui monitoring</tags>
     <summary>Yet another cross-platform graphical process/system monitor.</summary>
     <description>
     A cross-platform graphical process/system monitor with a customizable interface and a multitude of features. Supports Linux, macOS, and Windows. Inspired by both [gtop](https://github.com/aksakalli/gtop) and [gotop](https://github.com/cjbassi/gotop).
     
     Features of bottom include:
 
-    - CPU widget to show a visual representation of per-core (and optionally average) usage.
+    * CPU widget to show a visual representation of per-core (and optionally average) usage.
 
-    - Memory widget to show a visual representation of both RAM and SWAP usage.
+    * Memory widget to show a visual representation of both RAM and SWAP usage.
 
-    - Networks widget to show a log-based visual representation of network usage.
+    * Networks widget to show a log-based visual representation of network usage.
 
-    - Sortable and searchable process widget. Searching supports regex, and you can search by PID and process name.
+    * Sortable and searchable process widget. Searching supports regex, and you can search by PID and process name.
 
-    - Disks widget to display usage and I/O per second.
+    * Disks widget to display usage and I/O per second.
 
-    - Temperature widget to monitor detected sensors in your system.
+    * Temperature widget to monitor detected sensors in your system.
 
-    - Flags to customize the display.
+    * Flags to customize the display.
 
-    - Config file support for custom colours and default options.
+    * Config file support for custom colours and default options.
 
-    - Maximizing of widgets of interest to take up the entire window.
+    * Maximizing of widgets of interest to take up the entire window.
 
 
-    ## Usage
+    **Usage**
     To use, run `btm` in a terminal.
     
     For more documentation and usage, see the [official repo](https://github.com/ClementTsang/bottom).
