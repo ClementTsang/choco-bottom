@@ -43,10 +43,10 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- If there is a license Url available, it is required for the community feed -->
     <licenseUrl>https://github.com/ClementTsang/bottom/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/ClementTsang/bottom</projectSourceUrl>
-    <!--<docsUrl>At what url are the software docs located?</docsUrl>-->
+    <projectSourceUrl>https://github.com/ClementTsang/bottom/releases/tag/0.2.2</projectSourceUrl>
+    <docsUrl>https://github.com/ClementTsang/bottom/blob/master/README.md</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
-    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <bugTrackerUrl>https://github.com/ClementTsang/bottom/issues</bugTrackerUrl>
     <tags>cli cross-platform terminal top tui monitoring</tags>
     <summary>Yet another cross-platform graphical process/system monitor.</summary>
     <description>
