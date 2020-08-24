@@ -8,12 +8,12 @@ jobs:
     steps:
       - name: Get package info from repo
         run: |
-          curl -LO https://github.com/ClementTsang/bottom/releases/download/'${{ github.event.client_payload.repository }}'/choco.zip
+          curl -LO https://github.com/ClementTsang/bottom/releases/download/'${{ github.event.client_payload.version }}'/choco.zip
           unzip -o choco.zip
       - name: Create PR
         uses: peter-evans/create-pull-request@v2.8.0
         with:
-          commit-message: "Actions: Update package files to '${{ github.event.client_payload.repository }}'"
+          commit-message: "Actions: Update package files to '${{ github.event.client_payload.version }}'"
           title: Automatic repo update
           body: This is an automatic update to the choco files in response to a new bottom release.
           branch: update_branch
