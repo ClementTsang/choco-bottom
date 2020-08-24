@@ -6,6 +6,7 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Get package info from repo
         run: |
           curl -LO https://github.com/ClementTsang/bottom/releases/download/${{ github.event.client_payload.version }}/choco.zip
