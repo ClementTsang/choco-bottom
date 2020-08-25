@@ -11,6 +11,7 @@ jobs:
         run: |
           curl -LO https://github.com/ClementTsang/bottom/releases/download/${{ github.event.client_payload.version }}/choco.zip
           unzip -o choco.zip
+          rm choco.zip
       - name: Create PR
         uses: peter-evans/create-pull-request@v2.8.0
         with:
@@ -18,4 +19,3 @@ jobs:
           title: Automatic repo update
           body: This is an automatic update to the choco files in response to a new bottom release.
           branch: update_branch
-          
