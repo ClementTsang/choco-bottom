@@ -15,7 +15,7 @@ jobs:
       - name: Create PR
         uses: peter-evans/create-pull-request@v2.8.0
         with:
-          commit-message: "Actions: Update package files to ${{ github.event.client_payload.version }}"
-          title: Automatic repo update
-          body: This is an automatic update to the choco files in response to a new bottom release.
+          commit-message: "Actions: Update choco package files to ${{ github.event.client_payload.version }}"
+          title: "Automatic choco update to ${{ github.event.client_payload.version }}"
+          body: "This is an automatic update to the choco files in response to a bottom release, version ${{ github.event.client_payload.version }}."
           branch: update_branch
