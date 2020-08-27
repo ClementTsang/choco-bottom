@@ -20,7 +20,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>bottom</id>
-    <version>0.4.6</version>
+    <version>0.4.7</version>
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
@@ -42,7 +42,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     
     For more [documentation and usage](https://github.com/ClementTsang/bottom/blob/master/README.md), see the [official repo](https://github.com/ClementTsang/bottom).
     </description>
-    <releaseNotes>https://github.com/ClementTsang/bottom/releases/tag/0.4.6/</releaseNotes>
+    <releaseNotes>https://github.com/ClementTsang/bottom/releases/tag/0.4.7/</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->
