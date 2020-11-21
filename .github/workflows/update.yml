@@ -13,7 +13,7 @@ jobs:
           unzip -o choco.zip
           rm choco.zip
       - name: Create PR
-        uses: peter-evans/create-pull-request@v2.8.0
+        uses: peter-evans/create-pull-request@v3.5.0
         with:
           commit-message: "Actions: Update choco package files to ${{ github.event.client_payload.version }}"
           title: "Automatic choco update to ${{ github.event.client_payload.version }}"
