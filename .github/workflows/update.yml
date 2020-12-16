@@ -19,3 +19,4 @@ jobs:
           title: "Automatic choco update to ${{ github.event.client_payload.version }}"
           body: "This is an automatic update to the choco files in response to a bottom release, version ${{ github.event.client_payload.version }}."
           branch: update_branch
+          delete-branch: true
