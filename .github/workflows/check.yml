@@ -19,8 +19,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Check
+      - name: Check x86-64
         run: |
           choco pack
           choco install bottom -dv -s .
+          btm -V;
+      
+      - name: Check x86
+        run: |
+          choco pack
+          choco uninstall bottom
+          choco install bottom -dv --x86 -s .
           btm -V;
