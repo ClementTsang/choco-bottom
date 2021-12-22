@@ -6,12 +6,6 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: tibdex/github-app-token@cd81e4cb40c3672f41b30a21758d6298e821691b
-        id: generate-token
-        with:
-          app_id: ${{ secrets.GH_APP_ID }}
-          private_key: ${{ secrets.GH_APP_SECRET }}
-
       - uses: actions/checkout@v2
       - name: Get package info from repo
         run: |
@@ -19,8 +13,14 @@ jobs:
           unzip -o choco.zip
           rm choco.zip
 
+      - uses: tibdex/github-app-token@cd81e4cb40c3672f41b30a21758d6298e821691b
+        id: generate-token
+        with:
+          app_id: ${{ secrets.GH_APP_ID }}
+          private_key: ${{ secrets.GH_APP_SECRET }}
+
       - name: Create PR
-        uses: peter-evans/create-pull-request@v3.5.0
+        uses: peter-evans/create-pull-request@dcd5fd746d53dd8de555c0f10bca6c35628be47a
         with:
           token: ${{ steps.generate-token.outputs.token }}
           commit-message: "Actions: Update choco package files to ${{ github.event.client_payload.version }}"
