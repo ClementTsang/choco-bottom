@@ -13,7 +13,7 @@ jobs:
           unzip -o choco.zip
           rm choco.zip
 
-      - uses: tibdex/github-app-token@cd81e4cb40c3672f41b30a21758d6298e821691b
+      - uses: tibdex/github-app-token@v1
         id: generate-token
         with:
           app_id: ${{ secrets.GH_APP_ID }}
