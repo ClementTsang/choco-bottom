@@ -44,30 +44,3 @@ jobs:
             btm -V
             exit 1
           }
-
-      - name: Check x86
-        run: |
-          choco pack
-          choco uninstall bottom
-          choco install bottom -dv --x86 -s .
-          btm -V
-
-      - name: Ensure x86 version matches
-        run: |
-          $choco_info = choco list bottom --local-only
-          $btm_version = btm -V
-          if ( $btm_version -eq $choco_info[1] )
-          {
-            echo "bottom versions matches choco"
-          }
-          else
-          {
-            echo "bottom version mismatch with choco!"
-            echo "----- choco info -----"
-            choco list bottom --local-only
-            echo "----- compared choco info line -----"
-            echo $choco_info[1]
-            echo "----- bottom info -----"
-            btm -V
-            exit 1
-          }
