@@ -2,6 +2,8 @@
 
 Repository to house choco files for [bottom](https://github.com/ClementTsang/bottom). See [here](https://community.chocolatey.org/packages/bottom) for the chocolatey package.
 
+Generally, unless something goes wrong, updates to this repo are done through an automated hook when a stable version of bottom releases. This creates a PR with the necessary changes.
+
 To test and deploy, see [here](https://chocolatey.org/courses/creating-chocolatey-packages/building-testing-and-pushing) for more info, but the gist is, in an admin/elevated terminal, run:
 
 ```bash
