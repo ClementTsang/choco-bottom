@@ -25,6 +25,6 @@ If this is all successful, you can deploy:
 choco push <PACKAGE_NAME>.nupkg -s https://push.chocolatey.org/
 ```
 
-Note this requires linking your account API key to your machine. You can easily do so by logging in to Chocolatey and going to your API keys section, and following the instructions there.
+Note this requires linking your account API key to your machine. You can easily do so by logging in to Chocolatey and going to [your account](https://community.chocolatey.org/account), and following the instructions there.
 
 After that, wait for the automated checks and you're done!
