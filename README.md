@@ -12,7 +12,7 @@ choco uninstall bottom          # Just to avoid having to force
 choco install bottom -dv -s .
 ```
 
-Then open a new terminal (does not need to be admin) to reload PATH and test that things work:
+Then open a new terminal (does not need to be admin) to reload PATH and test that things work (it may automatically update as well, but just to be safe):
 
 ```bash
 btm --version                   # Just in case, check again - it should match the new version
