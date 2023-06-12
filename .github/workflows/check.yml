@@ -27,7 +27,7 @@ jobs:
 
       - name: Ensure x86-64 version matches
         run: |
-          $choco_info = choco list bottom --local-only
+          $choco_info = choco list bottom
           $btm_version = btm -V
           if ( $btm_version -eq $choco_info[1] )
           {
@@ -37,7 +37,7 @@ jobs:
           {
             echo "bottom version mismatch with choco!"
             echo "----- choco info -----"
-            choco list bottom --local-only
+            choco list bottom
             echo "----- compared choco info line -----"
             echo $choco_info[1]
             echo "----- bottom info -----"
