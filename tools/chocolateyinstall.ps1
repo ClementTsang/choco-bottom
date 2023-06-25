@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://github.com/ClementTsang/bottom/releases/download/0.9.2/bottom_x86_64-pc-windows-msvc.zip'
+$url        = 'https://github.com/ClementTsang/bottom/releases/download/0.9.3/bottom_x86_64-pc-windows-msvc.zip'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -8,7 +8,7 @@ $packageArgs = @{
   unzipLocation = $toolsDir
   fileType      = 'exe'
   url           = $url
-  checksum      = '04367cda9facb5b3d27bb4ca2b5aade9bbf2f527'
+  checksum      = '65a2c50d452b0aee04621eef1984e07601d67764'
   checksumType  = 'sha1'
 
 }
