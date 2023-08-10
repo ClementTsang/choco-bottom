@@ -15,8 +15,8 @@ choco install bottom -dv -s .
 Then open a new terminal (does not need to be admin) to reload PATH and test that things work (it may automatically update as well, but just to be safe):
 
 ```bash
-btm --version                   # Just in case, check again - it should match the new version
-btm                             # Test changes and general usage quickly
+btm --version                   # Ensure the version matches the newly deployed one
+btm                             # Test changes and general usage
 ```
 
 If this is all successful, you can deploy:
