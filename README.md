@@ -4,7 +4,7 @@ Repository to house choco files for [bottom](https://github.com/ClementTsang/bot
 
 Generally, unless something goes wrong, updates to this repo are done through an automated hook when a stable version of bottom releases. This creates a PR with the necessary changes, with a quick check to see if an install and version check work.
 
-To test and deploy, see [here](https://chocolatey.org/courses/creating-chocolatey-packages/building-testing-and-pushing) for more info. For your conveneince, though, the gist is that in an admin/elevated terminal, run the following to test building the package and installing:
+To test and deploy, see [here](https://chocolatey.org/courses/creating-chocolatey-packages/building-testing-and-pushing) for more info. For your conveneince though, the gist is that in an admin/elevated terminal, run the following to test building the package and installing:
 
 ```bash
 choco pack
