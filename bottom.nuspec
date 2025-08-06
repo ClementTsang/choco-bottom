@@ -20,7 +20,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>bottom</id>
-    <version>0.10.2</version>
+    <version>0.11.0</version>
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
@@ -48,7 +48,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     **Note**
     This package currently depends on Visual C++ Redistributable for Visual Studio 2015 https://chocolatey.org/packages/vcredist2015. 
     </description>
-    <releaseNotes>https://github.com/ClementTsang/bottom/releases/tag/0.10.2/</releaseNotes>
+    <releaseNotes>https://github.com/ClementTsang/bottom/releases/tag/0.11.0/</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->
