@@ -1,0 +1,26 @@
+name: publish
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    uses: ./.github/workflows/check.yml
+    secrets: inherit
+
+  publish:
+    runs-on: windows-2022
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build
+        run: |
+          choco pack
+          choco install bottom -dv -s .
+          btm -V
+
+      - name: Publish
+        run: |
+          choco apikey --key ${{ secrets.CHOCO_API_KEY }} --source https://push.chocolatey.org/
+          choco push -s https://push.chocolatey.org/
