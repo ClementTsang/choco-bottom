@@ -10,6 +10,7 @@ jobs:
 
   publish:
     runs-on: windows-2022
+    needs: test
 
     steps:
       - uses: actions/checkout@v2
