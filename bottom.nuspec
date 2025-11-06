@@ -20,7 +20,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
     <id>bottom</id>
-    <version>0.11.2</version>
+    <version>0.11.3</version>
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
@@ -31,7 +31,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/ClementTsang/bottom</projectSourceUrl>
     <packageSourceUrl>https://github.com/ClementTsang/choco-bottom</packageSourceUrl>
-    <docsUrl>https://clementtsang.github.io/bottom/stable</docsUrl>
+    <docsUrl>https://bottom.pages.dev/stable</docsUrl>
     <bugTrackerUrl>https://github.com/ClementTsang/bottom/issues</bugTrackerUrl>
     <tags>cli cross-platform terminal top tui monitoring bottom btm</tags>
     <summary>A customizable cross-platform graphical process/system monitor for the terminal.</summary>
@@ -48,7 +48,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     **Note**
     This package currently depends on Visual C++ Redistributable for Visual Studio 2015 https://chocolatey.org/packages/vcredist2015. 
     </description>
-    <releaseNotes>https://github.com/ClementTsang/bottom/releases/tag/0.11.2/</releaseNotes>
+    <releaseNotes>https://github.com/ClementTsang/bottom/releases/tag/0.11.3/</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->
