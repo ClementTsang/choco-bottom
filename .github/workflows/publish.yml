@@ -1,5 +1,7 @@
 name: publish
 
+# Test and publish to choco
+
 on:
   workflow_dispatch:
 
