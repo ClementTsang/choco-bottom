@@ -1,5 +1,7 @@
 name: Update
 
+# Used for automatically making a PR when bottom releases.
+
 on: [repository_dispatch]
 
 jobs:
