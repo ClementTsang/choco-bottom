@@ -13,7 +13,7 @@ jobs:
           unzip -o choco.zip
           rm choco.zip
 
-      - uses:  actions/create-github-app-token@67018539274d69449ef7c02e8e71183d1719ab42 #v2.1.4
+      - uses: actions/create-github-app-token@67018539274d69449ef7c02e8e71183d1719ab42 #v2.1.4
         id: generate-token
         with:
           app-id: ${{ secrets.GH_APP_ID }}
