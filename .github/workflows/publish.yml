@@ -12,6 +12,7 @@ jobs:
 
   publish:
     runs-on: windows-2022
+    environment: release
     needs: test
 
     steps:
