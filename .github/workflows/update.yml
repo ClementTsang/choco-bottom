@@ -4,6 +4,9 @@ name: Update
 
 on: [repository_dispatch]
 
+permissions:
+  contents: read
+
 jobs:
   update:
     runs-on: ubuntu-latest
