@@ -5,6 +5,9 @@ name: publish
 on:
   workflow_dispatch:
 
+permissions:
+  contents: read
+
 jobs:
   test:
     uses: ./.github/workflows/check.yml
